@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom CSS -->
+  <style type="text/tailwindcss">
+    /* @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      } */
+  </style>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+
+  <title>Error.exe</title>
+</head>
+
+<body>
+  <!-- Chatbot -->
+  <div id="chatbot"></div>
+
+  <!-- Top Logo and Icons -->
+  <div class="position-relative img-top">
+    <div class="position-absolute">
+      <img src="https://www.eoiukraine.gov.in/images/logo.png" alt="government logo" class="img-top">
+    </div>
+    <div class="position-absolute right-0">
+      <div class="hstack gap-3">
+        <img src="./images/150_years_of_mahatma.jpg" alt="Celebrating 150 Years of Mahatma Gandhi" class="img-top">
+        <img src="./images/azadi_ka_amrit_mahotsav.jpg" alt="75 Years of Independence" class="img-top">
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="./images/home.svg" alt="Home">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Ambassador Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">The Embassy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Consular Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Bilateral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">India</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">ITEC and education</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="row">
+    <div class="col-lg-9 col-md-12 p-2">
+      <div id="headingCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.eoiukraine.gov.in/images/slider-2-11-2021n.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.eoiukraine.gov.in/images/slid-17-11-201.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/kx8isjqgaez2ha6a_1645881714.jpeg"
+              class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#headingCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#headingCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-12 p-2 ps-0">
+      <div class="vstack gap-1">
+        <img src="https://cdn.wionews.com/sites/default/files/styles/story_page/public/2022/02/26/243680-modi.png"
+          alt="" class="img-fluid">
+        <div class="bg-light p-2">Latest News</div>
+        <div class="bg-light p-2">Twitter updates</div>
+        <div class="bg-light p-2">SRS Publications</div>
+        <div class="bg-light p-2">Media / News</div>
+        <div class="bg-light p-2">Population Projections</div>
+        <div class="bg-light p-2">Contact Us</div>
+        <div class="bg-light p-2">Jobs @ Census</div>
+        <div class="bg-light p-2">Notifications</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="px-2" />
+
+  <!-- Links Section -->
+  <div class="row">
+    <div class="col-lg-8 col-md-12 p-2">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+          <div class="vstack gap-2 bg-light mb-2 me-2 border-2 border-light">
+            <a href="https://www.eoiukraine.gov.in/pdf/Advisory_kharkiv.jpg" target="_blank">
+              <div>
+                <embed class="pdf-embed overflow-hidden" src="https://www.eoiukraine.gov.in/pdf/Advisory_kharkiv.jpg"
+                  type="application/pdf">
+              </div>
+              <div class="text-center">URGENT ADVISORY TO INDIAN STUDENTS IN KHARKIV</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+          <div class="vstack gap-2 bg-light mb-2 me-2 border-2 border-light">
+            <a href="https://www.eoiukraine.gov.in/pdf/2nd%20Advisory%2028.02.2022.pdf" target="_blank">
+              <div>
+                <embed class="pdf-embed" src="https://www.eoiukraine.gov.in/pdf/2nd%20Advisory%2028.02.2022.pdf"
+                  type="application/pdf">
+              </div>
+              <div class="text-center">Second Advisory to all Indian Nationals/Students in Ukraine as on 28 February
+                2022</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+          <div class="vstack gap-2 bg-light mb-2 me-2 border-2 border-light">
+            <a href="https://www.eoiukraine.gov.in/pdf/Advisory%2028.02.2022.pdf" target="_blank">
+              <div>
+                <embed class="pdf-embed" src="https://www.eoiukraine.gov.in/pdf/Advisory%2028.02.2022.pdf"
+                  type="application/pdf">
+              </div>
+              <div class="text-center">Advisory to all Indian Nationals/Students in Ukraine as on 28 February 2022</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+          <div class="vstack gap-2 bg-light mb-2 me-2 border-2 border-light">
+            <a href="https://www.eoiukraine.gov.in/pdf/Second%20Advisory%2027.02.22.pdf" target="_blank">
+              <div>
+                <embed class="pdf-embed" src="https://www.eoiukraine.gov.in/pdf/Second%20Advisory%2027.02.22.pdf"
+                  type="application/pdf">
+              </div>
+              <div class="text-center">Second Advisory to all Indian Nationals/Students in Ukraine as on 27 February
+                2022</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+          <div class="vstack gap-2 bg-light mb-2 me-2 border-2 border-light">
+            <a href="https://www.eoiukraine.gov.in/pdf/Advisory%2027.02.22.pdf" target="_blank">
+              <div>
+                <embed class="pdf-embed" src="https://www.eoiukraine.gov.in/pdf/Advisory%2027.02.22.pdf"
+                  type="application/pdf">
+              </div>
+              <div class="text-center">Important Advisory to all Indian Nationals/Students in Ukraine as on 27 February
+                2022</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-0">
+          <div class="vstack gap-2 bg-light mb-2 me-2 border-2 border-light">
+            <a href="https://www.eoiukraine.gov.in/pdf/274679721_280938544169857_7346305558554073688_n.jpg"
+              target="_blank">
+              <div>
+                <embed class="pdf-embed"
+                  src="https://www.eoiukraine.gov.in/pdf/274679721_280938544169857_7346305558554073688_n.jpg"
+                  type="application/pdf">
+              </div>
+              <div class="text-center">Advisory to all Indian Nationals/Students in Ukraine as on 26 February 2022</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="px-2" />
+
+      <!-- FAQ Section -->
+      <h2 class="h2">FAQ</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Registration form for Indians in Ukraine
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSchsyDFjbdNPSy5ykoGSp7bvIxxBAKxpwz04czWFVw5k2Zhvg/viewform">https://docs.google.com/forms/d/e/1FAIpQLSchsyDFjbdNPSy5ykoGSp7bvIxxBAKxpwz04czWFVw5k2Zhvg/viewform</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              I am a student, and am unsure if my classes would
+              continue in online mode in Ukraine, or my University has not
+              explicitly declared online regime of classes. What can I expect going forward?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Embassy of India is engaging with concerned Ukrainian
+              authorities for appropriate regularization of education process.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              I am unable to contact the Embassy / I have emailed the
+              Embassy but not received a reply. What should I do?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              For maintaining contact with Indian citizens in light of the
+              situation, Embassy of India has opened the following special
+              helplines and email ID. Urgent and emergency related queries must
+              be directed only to these numbers. However, please note, that given
+              the deluge of phone calls and emails, Embassy may not be able to
+              respond to all queries immediately. Any new information would be
+              regularly published on Embassy website, twitter and facebook page.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Emergency Helpline?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Contact Number: <br>
+              +380 997300483 <br>
+              +380 997300428 <br>
+              Email-Id:
+              cons1.kyiv@mea.gov.in <br>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What is the website of Embassy Of India in Ukraine?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <a href="https://www.eoiukraine.gov.in/index.php">https://www.eoiukraine.gov.in/index.php</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              What are the locations for the bomb shelters/protective shelters in ukraine.
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <a
+                href="https://www.google.com/maps/d/u/0/viewer?mid=1nv3QreO1QS5_AmRRNLHXu7u99sKJ6JRR&ll=50.43948441581479%2C30.502664219511257&z=10">https://www.google.com/maps/d/u/0/viewer?mid=1nv3QreO1QS5_AmRRNLHXu7u99sKJ6JRR&ll=50.43948441581479%2C30.502664219511257&z=10</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12 ps-0">
+      <!-- Twitter embed -->
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">Ambassador flags off special train with 600 🇮🇳n students from Sumy University at Lviv
+          Railway
+          Station. They will travel to Poland and are expected to board evacuation flights to 🇮🇳 tomorrow. <br>Be Safe
+          Be
+          Strong <a href="https://t.co/6KYSAMxl9U">pic.twitter.com/6KYSAMxl9U</a></p>&mdash; India in Ukraine
+        (@IndiainUkraine) <a
+          href="https://twitter.com/IndiainUkraine/status/1501545964301164546?ref_src=twsrc%5Etfw">March 9,
+          2022</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <!-- Tailwind Config -->
+    <script src="./tailwind.config.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+    <!-- Twitter Embed Script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!-- Chatbot JS -->
+    <script src="./js/chatbot.js"></script>
+
+    <!-- Our Scripts -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

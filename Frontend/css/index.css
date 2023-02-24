@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.img-top {
+  height: 60px;
+}
+
+.pdf-embed {
+  width: 100%;
+}
